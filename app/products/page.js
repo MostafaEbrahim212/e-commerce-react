@@ -53,7 +53,7 @@ function Index() {
         <section className='py-3'>
             <div className="container">
                 <h1 className='text-3xl font-bold text-center text-indigo-600'>Products</h1>
-                <div className='categories w-full flex justify-center items-center space-x-4 mt-4'>
+                <div className='categories mt-4 grid grid-cols-1 gap-1 sm:grid-cols-2 md:grid-cols-5'>
                     {categories.map(category => (
                         <button onClick={() => setSelectedCategory(category)} key={category} className='bg-indigo-600 text-white px-4 py-2 block mt-auto rounded-md'>
                             {category}
